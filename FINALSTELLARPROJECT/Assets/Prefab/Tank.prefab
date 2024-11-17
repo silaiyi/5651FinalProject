@@ -220,11 +220,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Totallife: 0
-  life: 20
+  life: 200
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
-  GiveExp: 10
+  GiveExp: 15
   GiveCoin: 10
 --- !u!95 &4396965158635355965
 Animator:

@@ -57,7 +57,7 @@ MonoBehaviour:
   EnergyDef: 0
   BolterDef: 0
   GiveExp: 10
-  GiveCoin: 10
+  GiveCoin: 5
 --- !u!54 &827563998813059610
 Rigidbody:
   m_ObjectHideFlags: 0

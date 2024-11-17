@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Totallife: 0
-  life: 20
+  life: 120
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0

@@ -12,6 +12,16 @@ public class EnemyHp : MonoBehaviour
         Totallife=life+SystemMenu.EnemyHp+WaveCount.MonExHp;
         GiveCoin += WaveCount.exCoin+SystemMenu.moreCoin+InGameUpdate.InGameMoreCoin;
         GiveExp += WaveCount.exExp+SystemMenu.moreExp+InGameUpdate.InGameMoreExp;
+        if(GiveCoin<=0){
+            GiveCoin=1;
+        }
+        if(GiveExp<=0){
+            GiveExp=1;
+        }
+        /*
+        if(Totallife<=0){
+            Totallife=20;
+        }*/
     }
 
     // Update is called once per frame

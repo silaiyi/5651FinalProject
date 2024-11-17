@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    public static int isLoad=0;
+    public GameObject StartBtn,LoadBtn;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,19 +16,34 @@ public class StartMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        isLoad=PlayerPrefs.GetInt("isLoad");
+        if(isLoad==0){
+            StartBtn.SetActive(true);
+            LoadBtn.SetActive(false);
+        }else{
+            StartBtn.SetActive(false);
+            LoadBtn.SetActive(true);
+        }
     }
     public void StartGame()
     {
         SceneManager.LoadScene("MainMenu");
-        LoadData();
-
+        //LoadData();
+        Debug.Log("Start for first");
         //PlayerPrefs.DeleteAll();
+    }
+    public void LoadGame(){
+        SceneManager.LoadScene("MainMenu");
+        LoadData();
+        Debug.Log("Load Game");
     }
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Quitting game");
+    }
+    public void DeleteData(){
+        PlayerPrefs.DeleteAll();
     }
     void LoadData(){
         BankShop.Coin = PlayerPrefs.GetInt("Coin");

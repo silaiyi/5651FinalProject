@@ -137,12 +137,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Totallife: 0
-  life: 20
+  life: 120
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
-  GiveExp: 10
-  GiveCoin: 10
+  GiveExp: 5
+  GiveCoin: 1
 --- !u!95 &9181849084545686256
 Animator:
   serializedVersion: 5

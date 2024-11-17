@@ -427,6 +427,7 @@ MonoBehaviour:
   bomb: {fileID: 5713580221115161696, guid: 0ac5e0a4a5487c64abaa07d635b65e5c, type: 3}
   laserBullet: {fileID: 4410088591795732349, guid: e7ded5b69fb991b45b3ec4c61a7159d0, type: 3}
   rocket: {fileID: 5618942796300157973, guid: fe2c7ab71ddd62540880d8fcdba15be5, type: 3}
+  bullet: {fileID: 4410088591795732349, guid: 2e337777829fb794aa822f13122e156a, type: 3}
 --- !u!1 &7178309068874312046
 GameObject:
   m_ObjectHideFlags: 0

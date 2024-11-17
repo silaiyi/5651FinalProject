@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public const float MaxHp = 3000;
-    public static float InGameMaxHp, Hp,TotalDef,def=0,TotalDamege;
+    public static float InGameMaxHp, Hp,TotalDef,def=100,TotalDamege;
     public float seeHp;
     public Animator anim;
     public int speed = 10;
@@ -19,13 +19,14 @@ public class Player : MonoBehaviour
     public float currentTime;
     public int currentAttack = 0;
     List<string> attackAnimList = new List<string>(new string[] { "ESwordAtk1"});
+    public float BloterCD=5f,RocketCD=10f;
     public GameObject PistolFrontSight,BolterFrontSight;
     // Start is called before the first frame update
     void Start()
     {
         InGameMaxHp = MaxHp + BankShop.ShopExHp + InGameUpdate.InGameExHp;
         Hp = InGameMaxHp;
-        atktype1 = true;
+        atktype1=true;atktype2=false;atktype3=false;atktype4=false;atktype5=false;atktype6=false;
         anim.SetBool("PlayerToESword",true);
     }
     // Update is called once per frame
@@ -35,6 +36,8 @@ public class Player : MonoBehaviour
         InGameMaxHp = MaxHp + BankShop.ShopExHp + InGameUpdate.InGameExHp;
         TotalDef=def+BankShop.ShopDef+InGameUpdate.InGameDef;
         seeHp = Hp;
+        BloterCD += Time.deltaTime;
+        RocketCD += Time.deltaTime;
     }
     void TypeContro(){
         ChangeToType1();
@@ -189,7 +192,15 @@ public class Player : MonoBehaviour
     void BolterMoveMent()
     {
         if(Input.GetMouseButtonDown(0)){
-            anim.Play("BolterAtk");
+            //anim.Play("BolterAtk");
+            //anim.SetTrigger("BolterAttack");
+            if(BloterCD - 5f >= 0)
+            {
+                //anim.Play("BolterAtk");
+                anim.SetTrigger("BolterAttack");
+                Debug.Log("BolterAttack");
+                BloterCD=0;
+            }
         }else
         if (Input.GetKey(KeyCode.W))
         {
@@ -272,7 +283,7 @@ public class Player : MonoBehaviour
     }
     void HeavyMoveMent(){
         if(Input.GetMouseButtonDown(0)){
-            anim.Play("HeavyAtk");
+            anim.Play("HeavyAtk");            
         }
         if (Input.GetKey(KeyCode.W))
         {
@@ -319,7 +330,12 @@ public class Player : MonoBehaviour
     }
     void RocketMoveMent(){
         if(Input.GetMouseButtonDown(0)){
-            anim.Play("RocketAtk");
+            //anim.Play("RocketAtk");
+            if(RocketCD - 10f >= 0)
+            {
+                anim.Play("RocketAtk");
+                RocketCD=0;
+            }
         }else
         if (Input.GetKey(KeyCode.W))
         {

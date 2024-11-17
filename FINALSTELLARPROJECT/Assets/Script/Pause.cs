@@ -111,5 +111,6 @@ public class Pause : MonoBehaviour
         PlayerPrefs.SetInt("ShopDefC",BankShop.ShopDefC);
         PlayerPrefs.SetInt("ShopDefEx",BankShop.ShopDefEx);
         PlayerPrefs.SetInt("ShopDefLv",BankShop.ShopDefLv);
+        PlayerPrefs.SetInt("isLoad",1);
     }
 }

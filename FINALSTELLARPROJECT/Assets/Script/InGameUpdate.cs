@@ -32,6 +32,7 @@ public class InGameUpdate : MonoBehaviour
         InGameBolterSpeedLv=0;InGameBolterGrowLv=0;InGameBolterAtkLv=0;InGameBolterPushLv=0;
         InGameExHp=0;InGameDef=0;InGameMoreExp=0;InGameMoreCoin=0;
         InGameExHpLv=0;InGameDefLv=0;InGameMoreExpLv=0;InGameMoreCoinLv=0;
+        Exp=0;ExpTop=100;
         MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);MC.SetActive(false);
         MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);MBP.SetActive(false);
         MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
@@ -79,7 +80,7 @@ public class InGameUpdate : MonoBehaviour
             MH.SetActive(false);MD.SetActive(true);ME.SetActive(false);MC.SetActive(false);
         }else if(RandomUpdate<76&&RandomUpdate>=51){
             MH.SetActive(false);MD.SetActive(false);ME.SetActive(true);MC.SetActive(false);
-        }else if(RandomUpdateL>=76){
+        }else{
             MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);MC.SetActive(true);
         }
         if(RandomUpdateL<26){
@@ -89,7 +90,7 @@ public class InGameUpdate : MonoBehaviour
         }else if(RandomUpdateL<76&&RandomUpdateL>=51){
             MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(true);MBP.SetActive(false);
         }else if(RandomUpdateL>=76){
-            MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);MBP.SetActive(true);
+            MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(true);MBP.SetActive(false);
         }
         if(RandomUpdateR<26){
             MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
@@ -98,7 +99,7 @@ public class InGameUpdate : MonoBehaviour
         }else if(RandomUpdateR<76&&RandomUpdateR>=51){
             MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(true);MPF.SetActive(false);
         }else if(RandomUpdateR>=76){
-            MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(true);
+            MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
         }
 
     }
@@ -121,7 +122,7 @@ public class InGameUpdate : MonoBehaviour
         MH.SetActive(false);
     }
     public void MoreDef(){
-        InGameDef+=10;
+        InGameDef+=1;
         InGameDefLv++;
         if(InGameDefLv%5==0){
             InGameDef*=2;
@@ -137,7 +138,7 @@ public class InGameUpdate : MonoBehaviour
         ME.SetActive(false);
     }
     public void MoreCoin(){
-        InGameMoreCoin+=10;
+        InGameMoreCoin+=1;
         InGameMoreCoinLv++;
         if(InGameMoreCoinLv%5==0){
             InGameMoreCoin*=2;

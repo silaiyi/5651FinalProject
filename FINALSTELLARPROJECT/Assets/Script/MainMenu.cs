@@ -95,6 +95,9 @@ public class MainMenu : MonoBehaviour
         //PlayerLab
         SceneManager.LoadScene("Lv3");
     }
+    public void DeleteData(){
+        PlayerPrefs.DeleteAll();
+    }
     public void SaveData(){
         PlayerPrefs.SetInt("Coin",BankShop.Coin);
         PlayerPrefs.SetFloat("ShopLaserDamege",BankShop.ShopLaserDamege);
@@ -129,5 +132,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("ShopDefC",BankShop.ShopDefC);
         PlayerPrefs.SetInt("ShopDefEx",BankShop.ShopDefEx);
         PlayerPrefs.SetInt("ShopDefLv",BankShop.ShopDefLv);
+        PlayerPrefs.SetInt("isLoad",1);
+        Debug.Log("Save Game");
     }
 }

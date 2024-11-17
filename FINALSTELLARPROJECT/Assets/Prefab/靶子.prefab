@@ -100,8 +100,8 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
-  GiveExp: 100
-  GiveCoin: 10
+  GiveExp: 20
+  GiveCoin: 1
 --- !u!1001 &6455096900370610068
 PrefabInstance:
   m_ObjectHideFlags: 0

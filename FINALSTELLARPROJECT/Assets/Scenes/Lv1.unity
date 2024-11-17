@@ -795,10 +795,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: life
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
+      propertyPath: GiveCoin
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1101,10 +1105,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: life
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
+      propertyPath: GiveCoin
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1221,10 +1229,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: life
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
+      propertyPath: GiveCoin
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1286,10 +1298,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: life
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
+      propertyPath: GiveCoin
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1469,6 +1485,57 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8824029149230562079, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
   m_PrefabInstance: {fileID: 3430635197322859795}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1061538127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061538128}
+  - component: {fileID: 1061538129}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061538128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061538127}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061538129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061538127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f0322a81011e942bf100d20369e4b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Totallife: 0
+  life: 20
+  PistolDef: 0
+  EnergyDef: 0
+  BolterDef: 0
+  GiveExp: 50
+  GiveCoin: 50
 --- !u!1 &1080800219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,10 +1865,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: life
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
+      propertyPath: GiveCoin
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2840,6 +2911,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1606314780271066048, guid: c1ff73e8a6346c94d8bb7aa9e272f4b6, type: 3}
+      propertyPath: life
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 4526636013086324707, guid: c1ff73e8a6346c94d8bb7aa9e272f4b6, type: 3}
       propertyPath: m_Name
       value: "\u6B98\u9AB8"
@@ -2985,6 +3060,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 733311400382273519, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_Text
+      value: 'Money income increased by 1
+
+
+
+
+        Bonuses after every 5 upgrades'
+      objectReference: {fileID: 0}
     - target: {fileID: 875084139852670200, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2993,6 +3077,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 522321679}
+    - target: {fileID: 1486803781051987566, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_Text
+      value: Live Ammunition
+      objectReference: {fileID: 0}
     - target: {fileID: 2676154333216649713, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3045,6 +3133,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3161840985609547287, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_Text
+      value: "Speed \nUpgrade\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 3238997760299099856, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3053,6 +3145,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 522321679}
+    - target: {fileID: 3654172077658552929, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_Text
+      value: 'Pistol speed increased by 5
+
+
+
+
+        Bonuses after every 5 upgrades'
+      objectReference: {fileID: 0}
     - target: {fileID: 5119760359617633076, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3093,6 +3194,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 522321680}
+    - target: {fileID: 6558741486542529977, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_Text
+      value: Live Ammunition
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963195915372954532, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_Text
+      value: Live Ammunition
+      objectReference: {fileID: 0}
     - target: {fileID: 7103897128184641551, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3153,6 +3262,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 522321679}
+    - target: {fileID: 7966902413924604952, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367279347788435247, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8395196653118366738, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3181,6 +3298,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 522321680}
+    - target: {fileID: 8990663301422339431, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
+      propertyPath: m_Text
+      value: 'Defense increased by 1
+
+
+
+
+        Bonuses after every 5 upgrades'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3345,3 +3471,4 @@ SceneRoots:
   - {fileID: 1879896933}
   - {fileID: 1129584435}
   - {fileID: 592983887}
+  - {fileID: 1061538128}

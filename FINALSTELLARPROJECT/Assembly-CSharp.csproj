@@ -114,6 +114,7 @@
     <Compile Include="Assets\Unity UI Samples\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\StartMenu.cs" />
+    <Compile Include="Assets\Script\PBullet.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\DragPanel.cs" />
     <Compile Include="Assets\Script\NukeExplode.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\ScrollDetailTexture.cs" />

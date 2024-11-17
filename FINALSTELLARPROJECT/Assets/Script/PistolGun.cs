@@ -6,11 +6,11 @@ public class PistolGun : MonoBehaviour
 {
     //public GameObject pistolbullet;
     public static float currentTime = 0.49f;
-    private float invokeTime=0.5f,cdtime=0,laserTime=0;
+    public static float invokeTime=0.5f,cdtime=0,laserTime=0,BloterCD=5f,RocketCD=10f;
     public float TotalPistolRange,TotalPistolDamege,TotalBolterRange,TotalBolterDamege,TotalPistolForce;
     public float range = 100;
     public float force = 1,PistolDamege = 20;
-    public GameObject hitFX,bomb,laserBullet,rocket;
+    public GameObject hitFX,bomb,laserBullet,rocket,bullet;
     //public AudioClip hitSound;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,8 @@ public class PistolGun : MonoBehaviour
         TotalPistolDamege = PistolDamege + BankShop.ShopPistolDamege + InGameUpdate.InGamePistolDamege;
         TotalPistolForce = force + BankShop.ShopPistolForce + InGameUpdate.InGamePistolForce;
         invokeTime += Time.deltaTime;
+        BloterCD += Time.deltaTime;
+        RocketCD += Time.deltaTime;
         if(Player.atktype2 == true){
             if(Input.GetMouseButtonDown(0)){
                 PistolShot();
@@ -58,7 +60,7 @@ public class PistolGun : MonoBehaviour
     void PistolShot(){
         //Instantiate(pistolbullet, transform.position, transform.rotation);
         if(invokeTime - currentTime >= 0)
-        {
+        {   /*
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(ray.origin, ray.direction * range, Color.green);
             RaycastHit hit;
@@ -73,15 +75,16 @@ public class PistolGun : MonoBehaviour
                     hit.transform.SendMessage("PistolDamege", TotalPistolDamege);
                     Debug.Log("On Hit");
                 }
-            }
+            }*/
+            Instantiate(bullet, transform.position, transform.rotation);
             invokeTime=0;
         }
     }
     void BolterShot(){
-        if(invokeTime - 1f >= 0)
+        if(BloterCD - 5f >= 0)
         {
             Instantiate(bomb, transform.position, transform.rotation);
-            invokeTime=0;
+            BloterCD=0;
         }
     }
     void EgunShot(){
@@ -99,7 +102,7 @@ public class PistolGun : MonoBehaviour
     }
     void HeavyShot(){
         if(invokeTime - 0.01f >= 0)
-        {
+        {/*
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(ray.origin, ray.direction * range, Color.green);
             RaycastHit hit;
@@ -112,15 +115,16 @@ public class PistolGun : MonoBehaviour
                     hit.rigidbody.AddForceAtPosition(TotalPistolForce * ray.direction,hit.point, ForceMode.Impulse);
                     hit.transform.SendMessage("PistolDamege", TotalPistolDamege);
                 }
-            }
+            }*/
+            Instantiate(bullet, transform.position, transform.rotation);
             invokeTime=0;
         }
     }
     void RocketShot(){
-        if(invokeTime - 1f >= 0)
+        if(RocketCD - 10f >= 0)
         {
             Instantiate(rocket, transform.position, transform.rotation);
-            invokeTime=0;
+            RocketCD=0;
         }
     }
 
