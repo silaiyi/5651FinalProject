@@ -23,6 +23,8 @@ public class InGameUpdate : MonoBehaviour
     public const float MaxTimer=300f;
     public float Timer;
     public GameObject LoseMenu,WinMenu;
+    public GameObject LegSpeed,LegJump,LegEnergy;
+    public static bool LegOn,LegSpeedOn,LegJumpOn,LegEnergyOn;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +42,9 @@ public class InGameUpdate : MonoBehaviour
         MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
         LoseMenu.SetActive(false);WinMenu.SetActive(false);
         LaserDrone.SetActive(false);BulletDrone.SetActive(false);ExplodeDrone.SetActive(false);
-        DroneON=false;LaserDroneOn=false;BulletDroneOn=false;ExplodeDroneOn=false;
+        LegSpeed.SetActive(false);LegJump.SetActive(false);LegEnergy.SetActive(false);
+        DroneON=false;//LaserDroneOn=false;BulletDroneOn=false;ExplodeDroneOn=false;
+        LegOn=false;
         HpSl.maxValue = Player.InGameMaxHp;
         HpSl.value = Player.Hp;
         ExpSl.maxValue = ExpTop;
@@ -78,29 +82,29 @@ public class InGameUpdate : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         inUpdating=true;
-        //GameUpdate();
-        TestUpdate();
+        GameUpdate();
+        //TestUpdate();
     }
     void TestUpdate(){
         if(RandomUpdate>0){
             if(DroneON==false){
-                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(true);
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(true);
             }else{
-                MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
+                MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(false);
             }
         }
         if(RandomUpdateL>0){
             if(DroneON==false){
-                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(true);
+                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(true);
             }else{
-                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(false);
+                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(false);
             }
         }
         if(RandomUpdateR>0){
             if(DroneON==false){
-                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(true);
+                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(true);
             }else{
-                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(false);
+                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(false);
             }
         }
     }
@@ -111,7 +115,7 @@ public class InGameUpdate : MonoBehaviour
             MH.SetActive(false);MD.SetActive(true);ME.SetActive(false);LaserDrone.SetActive(false);
         }else if(RandomUpdate<76&&RandomUpdate>=51){
             MH.SetActive(false);MD.SetActive(false);ME.SetActive(true);LaserDrone.SetActive(false);
-        }else{
+        }else if(RandomUpdateL>=76){
             if(DroneON==false){
                 MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(true);
             }else{
@@ -144,6 +148,21 @@ public class InGameUpdate : MonoBehaviour
                 MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(false);
             }
         }
+    }
+    public void UnlockLegSpeed(){
+        LegOn=true;
+        //LegSpeed.SetActive(true);LegJump.SetActive(false);LegEnergy.SetActive(false);
+        LegSpeedOn=true;LegJumpOn=false;LegEnergyOn=false;
+    }
+    public void UnlockLegJump(){
+        LegOn=true;
+        //LegSpeed.SetActive(false);LegJump.SetActive(true);LegEnergy.SetActive(false);
+        LegSpeedOn=false;LegJumpOn=true;LegEnergyOn=false;
+    }
+    public void UnlockLegEnergy(){
+        LegOn=true;
+        //LegSpeed.SetActive(false);LegJump.SetActive(false);LegEnergy.SetActive(true);
+        LegSpeedOn=false;LegJumpOn=false;LegEnergyOn=true;
     }
     public void UnlockLaserDrone(){
         DroneON=true;

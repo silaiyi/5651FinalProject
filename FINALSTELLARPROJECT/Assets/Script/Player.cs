@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float seeHp;
     public Animator anim;
     public int speed = 10;
-    public int walkspeed = 5;
+    public static int walkspeed = 10;
     public static bool atktype1 = true, atktype2 = false, atktype3 = false, atktype4 = false, atktype5 = false, atktype6 = false;
     public bool cango = false;
     public int attackNum = 2;//
@@ -19,8 +19,8 @@ public class Player : MonoBehaviour
     public float currentTime;
     public int currentAttack = 0;
     List<string> attackAnimList = new List<string>(new string[] { "ESwordAtk1"});
-    public float BloterCD=5f,RocketCD=10f;
-    public GameObject PistolFrontSight,BolterFrontSight,Drone1,Drone2;
+    public float BloterCD=5f,RocketCD=10f,jumpCD=3f;
+    public GameObject PistolFrontSight,BolterFrontSight,Drone1,Drone2,energyS;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +40,17 @@ public class Player : MonoBehaviour
         BloterCD += Time.deltaTime;
         RocketCD += Time.deltaTime;
         DroneOn();
+        if(InGameUpdate.LegJumpOn==true){
+            //walkspeed=25;
+            if(Input.GetKeyDown(KeyCode.Space)&&jumpCD-3f>=0){
+                transform.Translate(0, walkspeed * Time.deltaTime, 0);
+                jumpCD=0f;
+            }
+        }else if(InGameUpdate.LegSpeedOn==true){
+            walkspeed=25;
+        }else if(InGameUpdate.LegEnergyOn==true){
+            energyS.SetActive(true);
+        }
     }
     void DroneOn(){
         if(InGameUpdate.DroneON==true){

@@ -70,6 +70,7 @@
     <Compile Include="Assets\Unity UI Samples\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Script\BankShop.cs" />
     <Compile Include="Assets\Script\RotateCamera.cs" />
+    <Compile Include="Assets\Script\DamageLaser.cs" />
     <Compile Include="Assets\Script\TestInGameUp.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\Script\Fire.cs" />
