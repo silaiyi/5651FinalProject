@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageLaser : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float laserCD=1f;
     public float TotalLaserDamge,LaserDamage=20;
     void Start()
     {
@@ -14,7 +15,8 @@ public class DamageLaser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TotalLaserDamge=(LaserDamage + BankShop.ShopLaserDamege + InGameUpdate.InGameLaserDamege)/3;
+        TotalLaserDamge=LaserDamage + BankShop.ShopLaserDamege + InGameUpdate.InGameLaserDamege;
+        //laserCD+=Time.deltaTime;
     }
     private void OnTriggerStay(Collider collision)
     {
@@ -22,8 +24,13 @@ public class DamageLaser : MonoBehaviour
         EnemyHp hp2 = hit.GetComponent<EnemyHp>();
         if (hp2 != null)
         {
-            hp2.EnergyDamege(TotalLaserDamge);
-            hit.transform.SendMessage("PistolDamege", TotalLaserDamge);
+            laserCD+=Time.deltaTime;
+            if(laserCD-1f>=0){
+                hp2.EnergyDamege(TotalLaserDamge);
+                laserCD=0;
+            }
+            //hp2.EnergyDamege(TotalLaserDamge);
+            //hit.transform.SendMessage("PistolDamege", TotalLaserDamge);
             //Debug.Log("On Hit");
         }
     }

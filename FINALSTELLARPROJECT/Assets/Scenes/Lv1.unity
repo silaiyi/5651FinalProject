@@ -327,7 +327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &101336023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 522321679}
         m_TargetAssemblyTypeName: InGameUpdate, Assembly-CSharp
-        m_MethodName: UnlockExploDrone
+        m_MethodName: UnlockLegEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1750,7 +1750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &641363035
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1831,7 +1831,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 522321679}
         m_TargetAssemblyTypeName: InGameUpdate, Assembly-CSharp
-        m_MethodName: UnlockLaserDrone
+        m_MethodName: UnlockLegJump
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2099,7 +2099,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2110,12 +2110,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Unlock foot speed limit
+  m_Text: 'Increase movement speed,
 
-    Move faster
+    At the same time, you gain the ability
+    to hit, which can cause live damage to enemies hit.
 
-    After selecting, you will
-    not be able to select other weapons with the same parts.'
+    After selecting, you
+    will not be able to select other weapons with the same parts.'
 --- !u!222 &771340653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2452,7 +2453,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2463,12 +2464,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Unlock the ability to jump on your feet
+  m_Text: 'Unlock jumping ability
 
-    Press space to jump
+    Press space to jump, and an explosion will
+    occur under your feet when jumping.
 
-    After
-    selecting, you will not be able to select other weapons with the same parts.'
+    After selecting, you will not be able
+    to select other weapons with the same parts.'
 --- !u!222 &872937985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2541,7 +2543,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2552,9 +2554,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Unlock the drone\u2019s bomb function,\r\nSynchronized with explosive
-    upgrades.\r\nAfter selecting, you will not be able to select other weapons with
-    the same parts."
+  m_Text: 'Unlock the Corrosive Field
+
+    Creates a corrosive force field under
+    your feet, causing laser damage to enemies within the field.
+
+    After selecting,
+    you will not be able to select other weapons with the same parts.'
 --- !u!222 &890303999
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4111,6 +4117,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8741319572213357713, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
+      propertyPath: yRotationMaxLimit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741319572213357713, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
+      propertyPath: yRotationMinLimit
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4232,7 +4246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1647227896
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4313,7 +4327,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 522321679}
         m_TargetAssemblyTypeName: InGameUpdate, Assembly-CSharp
-        m_MethodName: UnlockBulletDrone
+        m_MethodName: UnlockLegSpeed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5755,7 +5769,7 @@ PrefabInstance:
       objectReference: {fileID: 522321679}
     - target: {fileID: 7966902413924604952, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8367279347788435247, guid: 7a715485fdfa69445bcb940852abb070, type: 3}
       propertyPath: m_IsActive
@@ -5887,6 +5901,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 417553347}
     - target: {fileID: 1599867029147658377, guid: 91c23ad7fa424ae47bcd514e8d064a93, type: 3}
+      propertyPath: LegJump
+      value: 
+      objectReference: {fileID: 641363034}
+    - target: {fileID: 1599867029147658377, guid: 91c23ad7fa424ae47bcd514e8d064a93, type: 3}
       propertyPath: TimerSl
       value: 
       objectReference: {fileID: 1520352985}
@@ -5895,9 +5913,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 132483337}
     - target: {fileID: 1599867029147658377, guid: 91c23ad7fa424ae47bcd514e8d064a93, type: 3}
+      propertyPath: LegSpeed
+      value: 
+      objectReference: {fileID: 1647227895}
+    - target: {fileID: 1599867029147658377, guid: 91c23ad7fa424ae47bcd514e8d064a93, type: 3}
       propertyPath: LoseMenu
       value: 
       objectReference: {fileID: 1185478231}
+    - target: {fileID: 1599867029147658377, guid: 91c23ad7fa424ae47bcd514e8d064a93, type: 3}
+      propertyPath: LegEnergy
+      value: 
+      objectReference: {fileID: 101336022}
     - target: {fileID: 1599867029147658377, guid: 91c23ad7fa424ae47bcd514e8d064a93, type: 3}
       propertyPath: LaserDrone
       value: 

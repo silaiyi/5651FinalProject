@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float seeHp;
     public Animator anim;
     public int speed = 10;
-    public static int walkspeed = 10;
+    public static int walkspeed = 5;
     public static bool atktype1 = true, atktype2 = false, atktype3 = false, atktype4 = false, atktype5 = false, atktype6 = false;
     public bool cango = false;
     public int attackNum = 2;//
@@ -20,7 +20,8 @@ public class Player : MonoBehaviour
     public int currentAttack = 0;
     List<string> attackAnimList = new List<string>(new string[] { "ESwordAtk1"});
     public float BloterCD=5f,RocketCD=10f,jumpCD=3f;
-    public GameObject PistolFrontSight,BolterFrontSight,Drone1,Drone2,energyS;
+    public GameObject PistolFrontSight,BolterFrontSight,Drone1,Drone2,energyS,jumpExplode,walkDamage;
+    public float minHeight = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        jumpCD+=Time.deltaTime;
         TypeContro();
         InGameMaxHp = MaxHp + BankShop.ShopExHp + InGameUpdate.InGameExHp;
         TotalDef=def+BankShop.ShopDef+InGameUpdate.InGameDef;
@@ -40,16 +42,25 @@ public class Player : MonoBehaviour
         BloterCD += Time.deltaTime;
         RocketCD += Time.deltaTime;
         DroneOn();
+        LegOn();
+        //OnGround();
+        
+    }
+    void LegOn(){
         if(InGameUpdate.LegJumpOn==true){
             //walkspeed=25;
             if(Input.GetKeyDown(KeyCode.Space)&&jumpCD-3f>=0){
-                transform.Translate(0, walkspeed * Time.deltaTime, 0);
+                transform.Translate(0, 10, 0);
                 jumpCD=0f;
+                Instantiate(jumpExplode, transform.position, transform.rotation);
             }
         }else if(InGameUpdate.LegSpeedOn==true){
-            walkspeed=25;
+            walkspeed=10;
+            walkDamage.SetActive(true);
+            energyS.SetActive(false);
         }else if(InGameUpdate.LegEnergyOn==true){
             energyS.SetActive(true);
+            walkDamage.SetActive(false);
         }
     }
     void DroneOn(){
@@ -59,6 +70,14 @@ public class Player : MonoBehaviour
         }else{
             Drone1.SetActive(false);
             Drone2.SetActive(false);
+        }
+    }
+    void OnGround(){
+        if (transform.position.y < minHeight)
+        {
+            Vector3 newPos = transform.position;
+            newPos.y = minHeight;
+            transform.position = newPos;
         }
     }
     void TypeContro(){

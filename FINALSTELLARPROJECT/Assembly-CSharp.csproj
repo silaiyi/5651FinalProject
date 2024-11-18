@@ -99,6 +99,7 @@
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\DragMe.cs" />
     <Compile Include="Assets\Script\MainMenu.cs" />
+    <Compile Include="Assets\Script\DamageExplode.cs" />
     <Compile Include="Assets\Script\EnemyExplode.cs" />
     <Compile Include="Assets\Script\DroneAi.cs" />
     <Compile Include="Assets\Script\StarterPoint.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Assets\Unity UI Samples\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\StartMenu.cs" />
+    <Compile Include="Assets\Script\EnergyForceRotate.cs" />
     <Compile Include="Assets\Script\PBullet.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\DragPanel.cs" />
     <Compile Include="Assets\Script\NukeExplode.cs" />
@@ -130,6 +132,7 @@
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
     <Compile Include="Assets\Script\findenemy.cs" />
+    <Compile Include="Assets\Script\DamageBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />

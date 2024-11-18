@@ -87,21 +87,21 @@ public class InGameUpdate : MonoBehaviour
     }
     void TestUpdate(){
         if(RandomUpdate>0){
-            if(DroneON==false){
+            if(LegOn==false){
                 MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(true);
             }else{
                 MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(false);
             }
         }
         if(RandomUpdateL>0){
-            if(DroneON==false){
+            if(LegOn==false){
                 MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(true);
             }else{
                 MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(false);
             }
         }
         if(RandomUpdateR>0){
-            if(DroneON==false){
+            if(LegOn==false){
                 MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(true);
             }else{
                 MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(false);
@@ -109,43 +109,61 @@ public class InGameUpdate : MonoBehaviour
         }
     }
     void GameUpdate(){
-        if(RandomUpdate<26){
+        if(RandomUpdate<21){
             MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
-        }else if(RandomUpdate<51&&RandomUpdate>=26){
+        }else if(RandomUpdate<41&&RandomUpdate>=21){
             MH.SetActive(false);MD.SetActive(true);ME.SetActive(false);LaserDrone.SetActive(false);
-        }else if(RandomUpdate<76&&RandomUpdate>=51){
+        }else if(RandomUpdate<61&&RandomUpdate>=41){
             MH.SetActive(false);MD.SetActive(false);ME.SetActive(true);LaserDrone.SetActive(false);
-        }else if(RandomUpdateL>=76){
+        }else if(RandomUpdate<81&&RandomUpdate>=61){
             if(DroneON==false){
                 MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(true);
             }else{
                 MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
             }
+        }else if(RandomUpdateL>=81){
+            if(LegOn==false){
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(true);
+            }else{
+                MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(false);
+            }
         }
-        if(RandomUpdateL<26){
+        if(RandomUpdate<21){
             MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);MBP.SetActive(false);
-        }else if(RandomUpdateL<51&&RandomUpdateL>=26){
+        }else if(RandomUpdate<41&&RandomUpdate>=21){
             MBS.SetActive(false);MBG.SetActive(true);MBA.SetActive(false);MBP.SetActive(false);
-        }else if(RandomUpdateL<76&&RandomUpdateL>=51){
+        }else if(RandomUpdate<61&&RandomUpdate>=41){
             MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(true);MBP.SetActive(false);
-        }else if(RandomUpdateL>=76){
+        }else if(RandomUpdate<81&&RandomUpdate>=61){
             if(DroneON==false){
                 MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(true);
             }else{
                 MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(false);
             }
+        }else if(RandomUpdateL>=81){
+            if(LegOn==false){
+                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(true);
+            }else{
+                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(false);
+            }
         }
-        if(RandomUpdateR<26){
+        if(RandomUpdate<21){
             MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
-        }else if(RandomUpdateR<51&&RandomUpdateR>=26){
+        }else if(RandomUpdate<41&&RandomUpdate>=21){
             MLD.SetActive(false);MPR.SetActive(true);MPD.SetActive(false);MPF.SetActive(false);
-        }else if(RandomUpdateR<76&&RandomUpdateR>=51){
+        }else if(RandomUpdate<61&&RandomUpdate>=41){
             MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(true);MPF.SetActive(false);
-        }else if(RandomUpdateR>=76){
+        }else if(RandomUpdate<81&&RandomUpdate>=61){
             if(DroneON==false){
                 MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(true);
             }else{
                 MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(false);
+            }
+        }else if(RandomUpdateL>=81){
+            if(LegOn==false){
+                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(true);
+            }else{
+                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(false);
             }
         }
     }
@@ -153,6 +171,7 @@ public class InGameUpdate : MonoBehaviour
         LegOn=true;
         //LegSpeed.SetActive(true);LegJump.SetActive(false);LegEnergy.SetActive(false);
         LegSpeedOn=true;LegJumpOn=false;LegEnergyOn=false;
+        Debug.Log("Leg Speed");
     }
     public void UnlockLegJump(){
         LegOn=true;
