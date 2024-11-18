@@ -20,7 +20,8 @@ public class Player : MonoBehaviour
     public int currentAttack = 0;
     List<string> attackAnimList = new List<string>(new string[] { "ESwordAtk1"});
     public float BloterCD=5f,RocketCD=10f;
-    public GameObject PistolFrontSight,BolterFrontSight;
+    public GameObject PistolFrontSight,BolterFrontSight,Drone1,Drone2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,16 @@ public class Player : MonoBehaviour
         seeHp = Hp;
         BloterCD += Time.deltaTime;
         RocketCD += Time.deltaTime;
+        DroneOn();
+    }
+    void DroneOn(){
+        if(InGameUpdate.DroneON==true){
+            Drone1.SetActive(true);
+            Drone2.SetActive(true);
+        }else{
+            Drone1.SetActive(false);
+            Drone2.SetActive(false);
+        }
     }
     void TypeContro(){
         ChangeToType1();

@@ -85,14 +85,17 @@ public class MainMenu : MonoBehaviour
     }
     public void ChooseLv1(){
         //PlayerLab
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Lv1");
     }
     public void ChooseLv2(){
         //PlayerLab
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Lv2");
     }
     public void ChooseLv3(){
         //PlayerLab
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Lv3");
     }
     public void DeleteData(){

@@ -16,6 +16,8 @@ public class InGameUpdate : MonoBehaviour
     public int RandomUpdate,seeExp,RandomUpdateL,RandomUpdateR,seeNowExp;
     public static bool inUpdating=false;
     public GameObject UpMenu,MH,MD,ME,MC,MBS,MBG,MBA,MBP,MLD,MPR,MPD,MPF;
+    public GameObject LaserDrone,BulletDrone,ExplodeDrone;
+    public static bool DroneON,LaserDroneOn,BulletDroneOn,ExplodeDroneOn;
     public Text coin;
     public Slider HpSl,ExpSl,TimerSl;
     public const float MaxTimer=300f;
@@ -37,6 +39,8 @@ public class InGameUpdate : MonoBehaviour
         MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);MBP.SetActive(false);
         MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
         LoseMenu.SetActive(false);WinMenu.SetActive(false);
+        LaserDrone.SetActive(false);BulletDrone.SetActive(false);ExplodeDrone.SetActive(false);
+        DroneON=false;LaserDroneOn=false;BulletDroneOn=false;ExplodeDroneOn=false;
         HpSl.maxValue = Player.InGameMaxHp;
         HpSl.value = Player.Hp;
         ExpSl.maxValue = ExpTop;
@@ -74,14 +78,45 @@ public class InGameUpdate : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         inUpdating=true;
+        //GameUpdate();
+        TestUpdate();
+    }
+    void TestUpdate(){
+        if(RandomUpdate>0){
+            if(DroneON==false){
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(true);
+            }else{
+                MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
+            }
+        }
+        if(RandomUpdateL>0){
+            if(DroneON==false){
+                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(true);
+            }else{
+                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(false);
+            }
+        }
+        if(RandomUpdateR>0){
+            if(DroneON==false){
+                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(true);
+            }else{
+                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(false);
+            }
+        }
+    }
+    void GameUpdate(){
         if(RandomUpdate<26){
-            MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);MC.SetActive(false);
+            MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
         }else if(RandomUpdate<51&&RandomUpdate>=26){
-            MH.SetActive(false);MD.SetActive(true);ME.SetActive(false);MC.SetActive(false);
+            MH.SetActive(false);MD.SetActive(true);ME.SetActive(false);LaserDrone.SetActive(false);
         }else if(RandomUpdate<76&&RandomUpdate>=51){
-            MH.SetActive(false);MD.SetActive(false);ME.SetActive(true);MC.SetActive(false);
+            MH.SetActive(false);MD.SetActive(false);ME.SetActive(true);LaserDrone.SetActive(false);
         }else{
-            MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);MC.SetActive(true);
+            if(DroneON==false){
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(true);
+            }else{
+                MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
+            }
         }
         if(RandomUpdateL<26){
             MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);MBP.SetActive(false);
@@ -90,7 +125,11 @@ public class InGameUpdate : MonoBehaviour
         }else if(RandomUpdateL<76&&RandomUpdateL>=51){
             MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(true);MBP.SetActive(false);
         }else if(RandomUpdateL>=76){
-            MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(true);MBP.SetActive(false);
+            if(DroneON==false){
+                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(true);
+            }else{
+                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(false);
+            }
         }
         if(RandomUpdateR<26){
             MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
@@ -99,9 +138,30 @@ public class InGameUpdate : MonoBehaviour
         }else if(RandomUpdateR<76&&RandomUpdateR>=51){
             MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(true);MPF.SetActive(false);
         }else if(RandomUpdateR>=76){
-            MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
+            if(DroneON==false){
+                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(true);
+            }else{
+                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(false);
+            }
         }
-
+    }
+    public void UnlockLaserDrone(){
+        DroneON=true;
+        //LaserDroneOn=true;BulletDroneOn=false;ExplodeDroneOn=false;
+        DroneAi.LaserDroneOn=true;DroneAi.BulletDroneOn=false;DroneAi.ExplodeDroneOn=false;
+        Debug.Log("Unlock Laser");
+    }
+    public void UnlockBulletDrone(){
+        DroneON=true;
+        //LaserDroneOn=false;BulletDroneOn=true;ExplodeDroneOn=false;
+        DroneAi.LaserDroneOn=false;DroneAi.BulletDroneOn=true;DroneAi.ExplodeDroneOn=false;
+        Debug.Log("Unlock Bullet");
+    }
+    public void UnlockExploDrone(){
+        DroneON=true;
+        //LaserDroneOn=false;BulletDroneOn=false;ExplodeDroneOn=true;
+        DroneAi.LaserDroneOn=false;DroneAi.BulletDroneOn=false;DroneAi.ExplodeDroneOn=true;
+        Debug.Log("Unlock Explode");
     }
     public void CloseMenu(){
         Time.timeScale = 1f;

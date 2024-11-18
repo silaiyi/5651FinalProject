@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2650375279991993568}
   - component: {fileID: 4861589726064010446}
   - component: {fileID: 9053690495742034409}
-  - component: {fileID: 7796305791965269523}
+  - component: {fileID: 2754769695075962664}
   m_Layer: 6
-  m_Name: Rocket
+  m_Name: DroneRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7438181151852246236}
   m_Father: {fileID: 0}
@@ -54,7 +54,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.3
   m_Height: 4
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 1.4138665}
@@ -85,7 +85,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7796305791965269523
+--- !u!114 &2754769695075962664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,11 +94,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5618942796300157973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b801ec3d6c19cb0418b6251035ff30c7, type: 3}
+  m_Script: {fileID: 11500000, guid: fb72670255f2f1448a59b1c2fa39e410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explo: {fileID: 4840481013989140204, guid: c7b9180f5c447cb4aa47ecd3da06321b, type: 3}
-  speed: 30
+  explo: {fileID: 1908195077293209424, guid: ade3cc74fd7af7e468716147c1b98fce, type: 3}
+  speed: 15
   xs: 0
   ys: 0
 --- !u!1001 &2392786177648308805
