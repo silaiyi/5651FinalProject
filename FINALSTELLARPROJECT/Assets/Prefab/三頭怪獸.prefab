@@ -73,10 +73,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Totallife: 0
-  life: 20
+  life: 3000
   PistolDef: 0
-  EnergyDef: 0
+  EnergyDef: 5000
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 10
   GiveCoin: 10
 --- !u!54 &1501277059513531770
@@ -158,7 +161,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

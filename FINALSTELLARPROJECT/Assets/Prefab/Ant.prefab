@@ -66,8 +66,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Totallife: 0
-  life: 20
-  PistolDef: 0
+  life: 400
+  PistolDef: 100
   EnergyDef: 0
   BolterDef: 0
   GiveExp: 10
@@ -87,12 +87,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2.2011511, z: 10.50687}
-  m_Center: {x: 0.09182358, y: 3.1467185, z: -1.599391}
+  m_Size: {x: 2, y: 4.363136, z: 10.50687}
+  m_Center: {x: 0.09182358, y: 2.0657308, z: -1.5993913}
 --- !u!54 &6670278689246562628
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -12,10 +12,10 @@ public class BankShop : MonoBehaviour
     public static float ShopExHp,ShopDef;
     public static int ShopLaserDamegeLv=1,ShopPistolRangeLv=1,ShopPistolDamegeLv=1,ShopPistolForceLv=1,ShopBolterSpeedLv=1,ShopBolterGrowLv=1,ShopBolterAtkLv=1,ShopBolterPushLv=1;
     public static int ShopLaserDamegeEX,ShopPistolRangeEX,ShopPistolDamegeEX,ShopPistolForceEX,ShopBolterSpeedEX,ShopBolterGrowEX,ShopBolterAtkEX,ShopBolterPushEX;
-    public static int ShopLaserDamegeC=50,ShopPistolRangeC=50,ShopPistolDamegeC=50,ShopPistolForceC=50,ShopBolterSpeedC=50,ShopBolterGrowC=50,ShopBolterAtkC=50,ShopBolterPushC=50;
+    public static int ShopLaserDamegeC=500,ShopPistolRangeC=500,ShopPistolDamegeC=500,ShopPistolForceC=500,ShopBolterSpeedC=500,ShopBolterGrowC=500,ShopBolterAtkC=500,ShopBolterPushC=500;
     public GameObject LaserBtn,HeavyBtn,RocketBtn,ShopBtn,ShopMenu;
     public static int UnlockLaser=0,UnlockHeavy=0,UnlockRocket=0;
-    public static int ShopExHpLv=1,ShopExHpEx,ShopExHpC=50,ShopDefLv=1,ShopDefEx,ShopDefC=50;
+    public static int ShopExHpLv=1,ShopExHpEx,ShopExHpC=500,ShopDefLv=1,ShopDefEx,ShopDefC=500;
     public Text ExHp,Def;
     // Start is called before the first frame update
     void Start()
@@ -165,24 +165,24 @@ public class BankShop : MonoBehaviour
         }
     }
     public void UnlockLaserBtn(){
-        if(Coin - 2500 >= 0){
-            Coin -= 2500;
+        if(Coin - 25000 >= 0){
+            Coin -= 25000;
             UnlockLaser = 1;
             PlayerPrefs.SetInt("UnlockLaser",UnlockLaser);
             LaserBtn.SetActive(false);
         }
     }
     public void UnlockHeavyBtn(){
-        if(Coin - 2500 >= 0){
-            Coin -= 2500;
+        if(Coin - 25000 >= 0){
+            Coin -= 25000;
             UnlockHeavy = 1;
             PlayerPrefs.SetInt("UnlockHeavy",UnlockHeavy);
             HeavyBtn.SetActive(false);
         }
     }
     public void UnlockRocketBtn(){
-        if(Coin - 2500 >= 0){
-            Coin -= 2500;
+        if(Coin - 25000 >= 0){
+            Coin -= 25000;
             UnlockRocket = 1;
             PlayerPrefs.SetInt("UnlockRocket",UnlockRocket);
             RocketBtn.SetActive(false);

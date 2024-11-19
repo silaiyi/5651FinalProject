@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHp : MonoBehaviour
 {
-    public float Totallife,life = 20f,PistolDef,EnergyDef,BolterDef;
+    public float Totallife,life = 20f,PistolDef,EnergyDef,BolterDef,TotalPistolGetHit,TotalEnergyGetHit,TotalBolterGetHit;
     public int GiveExp=10,GiveCoin=10;
     // Start is called before the first frame update
     void Start()
@@ -32,13 +32,26 @@ public class EnemyHp : MonoBehaviour
         }
     }
     public void PistolDamege(float GetHit){
-        Hit(GetHit - PistolDef);
+        TotalPistolGetHit=GetHit-PistolDef;
+        if(TotalPistolGetHit<=0){
+            TotalPistolGetHit=5;
+        }
+        Hit(TotalPistolGetHit);
     }
     public void EnergyDamege(float GetHit){
-        Hit(GetHit - EnergyDef);
+        TotalEnergyGetHit=GetHit-EnergyDef;
+        if(TotalEnergyGetHit<=0){
+            TotalEnergyGetHit=5;
+        }
+        Hit(TotalEnergyGetHit);
+
     }
     public void BolterDamege(float GetHit){
-        Hit(GetHit - BolterDef);
+        TotalBolterGetHit=GetHit-BolterDef;
+        if(TotalBolterGetHit<=0){
+            TotalBolterGetHit=5;
+        }
+        Hit(TotalBolterGetHit);
     }
     public void Hit(float damage)
     {

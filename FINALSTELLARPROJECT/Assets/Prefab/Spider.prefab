@@ -142,12 +142,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 1.7668476, z: 5.9840584}
-  m_Center: {x: 0, y: 3.7682705, z: -1.8000221}
+  m_Size: {x: 5, y: 4.5967135, z: 5.9840584}
+  m_Center: {x: 0, y: 2.3533401, z: -1.8000221}
 --- !u!54 &1684129729175228826
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -203,10 +203,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Totallife: 0
-  life: 20
-  PistolDef: 0
+  life: 200
+  PistolDef: 100
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 10
   GiveCoin: 10
 --- !u!1001 &7967561900302163217

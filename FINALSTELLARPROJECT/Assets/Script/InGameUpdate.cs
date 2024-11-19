@@ -110,60 +110,60 @@ public class InGameUpdate : MonoBehaviour
     }
     void GameUpdate(){
         if(RandomUpdate<21){
-            MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
+            MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);MC.SetActive(false);LaserDrone.SetActive(false);BulletDrone.SetActive(false);LegSpeed.SetActive(false);
         }else if(RandomUpdate<41&&RandomUpdate>=21){
-            MH.SetActive(false);MD.SetActive(true);ME.SetActive(false);LaserDrone.SetActive(false);
+            MH.SetActive(false);MD.SetActive(true);ME.SetActive(false);MC.SetActive(false);LaserDrone.SetActive(false);BulletDrone.SetActive(false);LegSpeed.SetActive(false);
         }else if(RandomUpdate<61&&RandomUpdate>=41){
-            MH.SetActive(false);MD.SetActive(false);ME.SetActive(true);LaserDrone.SetActive(false);
+            MH.SetActive(false);MD.SetActive(false);ME.SetActive(true);MC.SetActive(false);LaserDrone.SetActive(false);BulletDrone.SetActive(false);LegSpeed.SetActive(false);
         }else if(RandomUpdate<81&&RandomUpdate>=61){
             if(DroneON==false){
-                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(true);
-            }else{
-                MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LaserDrone.SetActive(false);
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);MC.SetActive(false);BulletDrone.SetActive(true);LegSpeed.SetActive(false);
+            }else if(DroneON==true){
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);MC.SetActive(true);BulletDrone.SetActive(false);LegSpeed.SetActive(false);
             }
-        }else if(RandomUpdateL>=81){
+        }else if(RandomUpdate>=81){
             if(LegOn==false){
-                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(true);
-            }else{
-                MH.SetActive(true);MD.SetActive(false);ME.SetActive(false);LegEnergy.SetActive(false);
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);MC.SetActive(false);BulletDrone.SetActive(false);LegSpeed.SetActive(true);
+            }else if(LegOn==true){
+                MH.SetActive(false);MD.SetActive(false);ME.SetActive(false);MC.SetActive(true);BulletDrone.SetActive(false);LegSpeed.SetActive(false);
             }
         }
-        if(RandomUpdate<21){
-            MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);MBP.SetActive(false);
-        }else if(RandomUpdate<41&&RandomUpdate>=21){
-            MBS.SetActive(false);MBG.SetActive(true);MBA.SetActive(false);MBP.SetActive(false);
-        }else if(RandomUpdate<61&&RandomUpdate>=41){
-            MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(true);MBP.SetActive(false);
-        }else if(RandomUpdate<81&&RandomUpdate>=61){
+        if(RandomUpdateR<21){
+            MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);MBP.SetActive(false);ExplodeDrone.SetActive(false);LegEnergy.SetActive(false);
+        }else if(RandomUpdateR<41&&RandomUpdateR>=21){
+            MBS.SetActive(false);MBG.SetActive(true);MBA.SetActive(false);MBP.SetActive(false);ExplodeDrone.SetActive(false);LegEnergy.SetActive(false);
+        }else if(RandomUpdateR<61&&RandomUpdateR>=41){
+            MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(true);MBP.SetActive(false);ExplodeDrone.SetActive(false);LegEnergy.SetActive(false);
+        }else if(RandomUpdateR<81&&RandomUpdateR>=61){
             if(DroneON==false){
-                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(true);
+                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);ExplodeDrone.SetActive(true);LegEnergy.SetActive(false);
             }else{
-                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);BulletDrone.SetActive(false);
+                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);ExplodeDrone.SetActive(false);LegEnergy.SetActive(false);
             }
-        }else if(RandomUpdateL>=81){
+        }else if(RandomUpdateR>=81){
             if(LegOn==false){
-                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(true);
+                MBS.SetActive(false);MBG.SetActive(false);MBA.SetActive(false);ExplodeDrone.SetActive(false);LegEnergy.SetActive(true);
             }else{
-                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);LegJump.SetActive(false);
+                MBS.SetActive(true);MBG.SetActive(false);MBA.SetActive(false);ExplodeDrone.SetActive(false);LegEnergy.SetActive(false);
             }
         }
-        if(RandomUpdate<21){
-            MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);
-        }else if(RandomUpdate<41&&RandomUpdate>=21){
-            MLD.SetActive(false);MPR.SetActive(true);MPD.SetActive(false);MPF.SetActive(false);
-        }else if(RandomUpdate<61&&RandomUpdate>=41){
-            MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(true);MPF.SetActive(false);
-        }else if(RandomUpdate<81&&RandomUpdate>=61){
+        if(RandomUpdateL<21){
+            MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);MPF.SetActive(false);LaserDrone.SetActive(false);LegJump.SetActive(false);
+        }else if(RandomUpdateL<41&&RandomUpdateL>=21){
+            MLD.SetActive(false);MPR.SetActive(true);MPD.SetActive(false);MPF.SetActive(false);LaserDrone.SetActive(false);LegJump.SetActive(false);
+        }else if(RandomUpdateL<61&&RandomUpdateL>=41){
+            MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(true);MPF.SetActive(false);LaserDrone.SetActive(false);LegJump.SetActive(false);
+        }else if(RandomUpdateL<81&&RandomUpdateL>=61){
             if(DroneON==false){
-                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(true);
+                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);LaserDrone.SetActive(true);LegJump.SetActive(false);
             }else{
-                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);ExplodeDrone.SetActive(false);
+                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);LaserDrone.SetActive(false);LegJump.SetActive(false);
             }
         }else if(RandomUpdateL>=81){
             if(LegOn==false){
-                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(true);
+                MLD.SetActive(false);MPR.SetActive(false);MPD.SetActive(false);LaserDrone.SetActive(false);LegJump.SetActive(true);
             }else{
-                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);LegSpeed.SetActive(false);
+                MLD.SetActive(true);MPR.SetActive(false);MPD.SetActive(false);LaserDrone.SetActive(false);LegJump.SetActive(false);
             }
         }
     }

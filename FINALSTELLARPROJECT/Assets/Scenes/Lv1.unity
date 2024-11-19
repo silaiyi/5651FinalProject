@@ -1407,7 +1407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveCoin
@@ -1945,7 +1945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveCoin
@@ -2112,11 +2112,11 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Increase movement speed,
 
-    At the same time, you gain the ability
-    to hit, which can cause live damage to enemies hit.
+    At the same time, you gain the ability to
+    hit, which can cause live damage to enemies hit.
 
-    After selecting, you
-    will not be able to select other weapons with the same parts.'
+    After selecting, you will
+    not be able to select other weapons with the same parts.'
 --- !u!222 &771340653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2314,7 +2314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveCoin
@@ -2383,7 +2383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveCoin
@@ -2860,11 +2860,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Totallife: 0
-  life: 0
+  life: 10
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
-  GiveExp: 100
+  GiveExp: 50
   GiveCoin: 50
 --- !u!1 &1080800219
 GameObject:
@@ -3425,7 +3425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveExp
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7750722451740236333, guid: a3e2c598ade92114a89d9fca530ebefd, type: 3}
       propertyPath: GiveCoin
@@ -4075,7 +4075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134734475186397394, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2134734475186397394, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4083,7 +4083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134734475186397394, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2134734475186397394, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4095,7 +4095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134734475186397394, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2134734475186397394, guid: 79fd6f03244c33248b5873ebb68297e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5233,7 +5233,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'legs
+  m_Text: 'Legs
 
     Force Field'
 --- !u!222 &1987894681

@@ -508,7 +508,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &133949971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &220129283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1044,7 +1044,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &289374499
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1337,7 +1337,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &365831027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1528,7 +1528,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2500 G
+  m_Text: 25000 G
 --- !u!222 &394453724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2343,7 +2343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2500 G
+  m_Text: 25000 G
 --- !u!222 &575207674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4301,7 +4301,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &796386889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4694,7 +4694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2500 G
+  m_Text: 25000 G
 --- !u!222 &869479185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8093,7 +8093,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &1331468479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10876,7 +10876,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &1848649589
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11512,7 +11512,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50 G LV: 1'
+  m_Text: '500 G LV: 1'
 --- !u!222 &1975586975
 CanvasRenderer:
   m_ObjectHideFlags: 0
