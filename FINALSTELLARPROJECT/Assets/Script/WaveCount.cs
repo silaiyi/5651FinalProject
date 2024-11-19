@@ -7,7 +7,7 @@ public class WaveCount : MonoBehaviour
     // Start is called before the first frame update
     public static float MonExHp=50,SpwanChange=0,TotalExHp=0,exAtk;
     public static int exCoin=0,exExp=0;
-    public static float currentTime = 20f;
+    public static float currentTime = 10f;
     private float invokeTime;
     public static int spawnWave = 1;
     public int seeWave;

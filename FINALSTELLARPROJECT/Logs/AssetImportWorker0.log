@@ -1,0 +1,774 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.49f1 (4dae1bb8668d) revision 5090843'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 32577 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\unity\2022.3.49f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/THEi/unityFinalProject/FSP/5651FinalProject/FINALSTELLARPROJECT
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56549
+Successfully changed project path to: F:/THEi/unityFinalProject/FSP/5651FinalProject/FINALSTELLARPROJECT
+F:/THEi/unityFinalProject/FSP/5651FinalProject/FINALSTELLARPROJECT
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28164]  Target information:
+
+Player connection [28164]  * "[IP] 192.168.100.14 [Port] 0 [Flags] 2 [Guid] 3024785319 [EditorId] 3024785319 [Version] 1048832 [Id] WindowsEditor(7,SKY-20201013GFB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28164] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28164] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Refreshing native plugins compatible for Editor in 8.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.49f1 (4dae1bb8668d)
+[Subsystems] Discovering subsystems at path D:/unity/2022.3.49f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/THEi/unityFinalProject/FSP/5651FinalProject/FINALSTELLARPROJECT/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   NVIDIA
+    VRAM:     3935 MB
+    Driver:   31.0.15.5222
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Initialize mono
+Mono path[0] = 'D:/unity/2022.3.49f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/2022.3.49f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/2022.3.49f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/2022.3.49f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004214 seconds.
+- Loaded All Assemblies, in  0.360 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.297 seconds
+Domain Reload Profiling: 657ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (114ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (136ms)
+				TypeCache.ScanAssembly (123ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (298ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (246ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (171ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.757 seconds
+Native extension for WindowsStandalone target not found
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.370 seconds
+Domain Reload Profiling: 2126ms
+	BeginReloadAssembly (149ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (518ms)
+		LoadAssemblies (346ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (255ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (196ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1371ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1193ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (1032ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5180 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (2.4 MB). Loaded Objects now: 5646.
+Memory consumption went from 217.1 MB to 214.6 MB.
+Total: 16.577500 ms (FindLiveObjects: 0.934200 ms CreateObjectMapping: 0.236800 ms MarkObjects: 14.518800 ms  DeleteObjects: 0.885200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2352158.461955 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit
+  artifactKey: Guid(01665830739e4f4448d3ee3cfd5f1e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit using Guid(01665830739e4f4448d3ee3cfd5f1e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e93dbcb5a7183b5f6c8388477c59c22c') in 0.003043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1
+  artifactKey: Guid(1306d18e537bafa48a7b9ec2b292ddf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1 using Guid(1306d18e537bafa48a7b9ec2b292ddf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '989192ab920bb3e2297719296bcf11f2') in 0.000656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump
+  artifactKey: Guid(12dccb4d709443043938fe3e2cc48cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump using Guid(12dccb4d709443043938fe3e2cc48cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6b49861ce7ef2169e3cd5ace587f239d') in 0.000903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.917712 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/No_Thump
+  artifactKey: Guid(1089f7125ea20b640aa64135f3e0309d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/No_Thump using Guid(1089f7125ea20b640aa64135f3e0309d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4160200c5408bee6423ba1995f156d72') in 0.000641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.803410 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1.wav
+  artifactKey: Guid(cc07f474de1abef43b32b6f95bcc159a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1.wav using Guid(cc07f474de1abef43b32b6f95bcc159a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'fe251c82924c505429ad9506aa1d1e2d') in 0.134199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.008624 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-53.wav
+  artifactKey: Guid(31772d5db5895124db0e53697e841e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-53.wav using Guid(31772d5db5895124db0e53697e841e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5425497856945e28dc85d376caf26206') in 0.017266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-14.wav
+  artifactKey: Guid(aba0b19f5c010cc4ab82ce2bb095b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-14.wav using Guid(aba0b19f5c010cc4ab82ce2bb095b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a9ab772e9857b4bc6192bfdd6033f199') in 0.008266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-49.wav
+  artifactKey: Guid(2e5d0f452f091944c931f5d6baab7019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-49.wav using Guid(2e5d0f452f091944c931f5d6baab7019) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'eecddbc5a84536a1b25bf3c367379084') in 0.110472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001104 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-35.wav
+  artifactKey: Guid(bd90ba9ee1ff0a64a889fb27e8f462a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-35.wav using Guid(bd90ba9ee1ff0a64a889fb27e8f462a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ded34b1f3e61f088b96bfccb8c2fb789') in 0.007172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-38.wav
+  artifactKey: Guid(97801cf34e7a8bd47853eb36d3a9eb5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-38.wav using Guid(97801cf34e7a8bd47853eb36d3a9eb5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'beeac27fb143b8b17cc0dc22a269b12c') in 0.007583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-27.wav
+  artifactKey: Guid(c14b4e8b0b4710a4099b1b0686edc9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-27.wav using Guid(c14b4e8b0b4710a4099b1b0686edc9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0da0e70107e245eb48b1d276a5eacc06') in 0.006521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-56.wav
+  artifactKey: Guid(e8df4419d316a1346bedcf9a11befe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-56.wav using Guid(e8df4419d316a1346bedcf9a11befe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '135b77bac6fbd8f1c77425694b226453') in 0.007570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-03.wav
+  artifactKey: Guid(eadfdd5c95ac1fc4884be498953bf538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-03.wav using Guid(eadfdd5c95ac1fc4884be498953bf538) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8d0d9c2e63a453b4c76dcc628558dfdd') in 0.007098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-24.wav
+  artifactKey: Guid(a5a3e07f0e93f404bb1ccbd272eb2b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-24.wav using Guid(a5a3e07f0e93f404bb1ccbd272eb2b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '307a8d4433cb5baad2bc71aea658f9fd') in 0.006867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-75.wav
+  artifactKey: Guid(3a89444b078cf0642ad570f79783e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-75.wav using Guid(3a89444b078cf0642ad570f79783e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '72d084b7ca81cf2e9bfb072d4e4c8c26') in 0.008131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-44.wav
+  artifactKey: Guid(aacb27b7e49263041b4989732467bd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-44.wav using Guid(aacb27b7e49263041b4989732467bd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cf0097e463684d7b48d7622aca4c0bff') in 0.007039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-31.wav
+  artifactKey: Guid(e90ff988e2bd9a84cb53cce63787b950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-31.wav using Guid(e90ff988e2bd9a84cb53cce63787b950) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c09212e61a2ddbc1cef9685bced998b2') in 0.008977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-28.wav
+  artifactKey: Guid(9f9a358fdd106544b909ff21c974511f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-28.wav using Guid(9f9a358fdd106544b909ff21c974511f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ff749375cba73a24015a814bc4eb15fc') in 0.008077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-50.wav
+  artifactKey: Guid(6e2d2cf13b2031145b63771bd651c991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-50.wav using Guid(6e2d2cf13b2031145b63771bd651c991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a763300d15cd13e45aec183ecb42c59e') in 0.006585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-17.wav
+  artifactKey: Guid(8f283fd6bd095c440bc1e622711c5623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-17.wav using Guid(8f283fd6bd095c440bc1e622711c5623) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7e4372cc2b446ae81231778051d271fd') in 0.012162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-13.wav
+  artifactKey: Guid(a575bb4983d63fd459b0c284942cc8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-13.wav using Guid(a575bb4983d63fd459b0c284942cc8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8b79f8a41f8740131ec7e5a1ec6ea21e') in 0.010933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-37.wav
+  artifactKey: Guid(dc94fb8183dbdbd4e93c33736a23d1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-37.wav using Guid(dc94fb8183dbdbd4e93c33736a23d1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8bf7b85998cc09e7e377b664da18dc60') in 0.007911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-29.wav
+  artifactKey: Guid(3ba322597ae78844a8524e0577665f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-29.wav using Guid(3ba322597ae78844a8524e0577665f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '69c2cd1e2b4a57bc19c44f8d4ac71b72') in 0.007576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-08.wav
+  artifactKey: Guid(e59d7acccd570da4c87ded4523ed1f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-08.wav using Guid(e59d7acccd570da4c87ded4523ed1f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ec69a64e7cdedfa0adf075060b201280') in 0.009099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-52.wav
+  artifactKey: Guid(0a6a1cdd7edb6384c9a007087cf6c835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-52.wav using Guid(0a6a1cdd7edb6384c9a007087cf6c835) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b1ae62613ad37856d889b18439419c1c') in 0.010489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-45.wav
+  artifactKey: Guid(992634cf581b3a0458ae02bb1a60b443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-45.wav using Guid(992634cf581b3a0458ae02bb1a60b443) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '61c45c63530e06e47bbb333c6bf637e5') in 0.007079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-70.wav
+  artifactKey: Guid(2096aa7f39be918469c4d51958433386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-70.wav using Guid(2096aa7f39be918469c4d51958433386) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd3259ba2aa5c1f50dbc0b48cde59bdc9') in 0.009095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-19.wav
+  artifactKey: Guid(2d47ad10aa1c90541b0f363093db1531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-19.wav using Guid(2d47ad10aa1c90541b0f363093db1531) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '08e1b294263e37637382ac1190d950eb') in 0.009926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-72.wav
+  artifactKey: Guid(a2f5d2ce3802edd47b53932ea56e9bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-72.wav using Guid(a2f5d2ce3802edd47b53932ea56e9bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3c41a2a6613ac778af1e14b40876ddfb') in 0.008129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-62.wav
+  artifactKey: Guid(9d0b6805e83aa9449bd3dcca65d51e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-62.wav using Guid(9d0b6805e83aa9449bd3dcca65d51e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8f156498203c32f6d7f30c69a6a479ff') in 0.007353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-43.wav
+  artifactKey: Guid(ff480b8ff61060341868fd2061ff4a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-43.wav using Guid(ff480b8ff61060341868fd2061ff4a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '29b280114d8e7ab4ffb82af71caa31ea') in 0.010271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-21.wav
+  artifactKey: Guid(472a365dce956434b80a1d337ab36c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-21.wav using Guid(472a365dce956434b80a1d337ab36c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f7aa4d1b62d40f4e2f7b528e459ae264') in 0.010015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-32.wav
+  artifactKey: Guid(dd168e3abb4631b4ba81c2e7e484c1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-32.wav using Guid(dd168e3abb4631b4ba81c2e7e484c1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0945c058f3c957a02e63a2dacb972d73') in 0.008532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-26.wav
+  artifactKey: Guid(0ff76195771326640a933477142360ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-26.wav using Guid(0ff76195771326640a933477142360ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '458bb8f84a0473265f88ff8bda203deb') in 0.009046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-10.wav
+  artifactKey: Guid(539203389772c75439ffbd0b685e5a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-10.wav using Guid(539203389772c75439ffbd0b685e5a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'dc9e805e8280e1f9847a358a0c04573f') in 0.010508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-05.wav
+  artifactKey: Guid(59c063a0233172041bebc5615db1ec9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-05.wav using Guid(59c063a0233172041bebc5615db1ec9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '520c83d184ce84e87782b09f16d1da71') in 0.008136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-15.wav
+  artifactKey: Guid(fb68f7e956b39e24ab7ffec9cccf2b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-15.wav using Guid(fb68f7e956b39e24ab7ffec9cccf2b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3edd45872fbe4366ac599c5a5e87b789') in 0.020545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-16.wav
+  artifactKey: Guid(1894eb0f773cab444a75798d9a758e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-16.wav using Guid(1894eb0f773cab444a75798d9a758e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4dde329c9833e49c57206a17ae411a17') in 0.010341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-09.wav
+  artifactKey: Guid(25dfc09a251c09c4dbc2037e81583057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-09.wav using Guid(25dfc09a251c09c4dbc2037e81583057) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '58cd4b597fb870f6bfb45e1d2770054a') in 0.017805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-02.wav
+  artifactKey: Guid(217a538832abc3a47a2f65baf9a4309c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-02.wav using Guid(217a538832abc3a47a2f65baf9a4309c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'eb9e32121c8474fb227d2f45ec6f4f74') in 0.016766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-73.wav
+  artifactKey: Guid(276c6f6542e4448478e903b646389100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-73.wav using Guid(276c6f6542e4448478e903b646389100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c3d8089fe49041c2119484a565575a63') in 0.023281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-33.wav
+  artifactKey: Guid(521e0bbdea1186a4bace26ab9d9daf98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-33.wav using Guid(521e0bbdea1186a4bace26ab9d9daf98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3ad95759f9a4e261e86ed2418a7f21af') in 0.007987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 20.530180 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-79.wav
+  artifactKey: Guid(4a7443ef6f5442b40b42a95d37566db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-79.wav using Guid(4a7443ef6f5442b40b42a95d37566db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd02feacbe1f7fca2ef39e9059bd337fc') in 0.009832 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-91.wav
+  artifactKey: Guid(e2a4bd5d996e012419e1909620801785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-91.wav using Guid(e2a4bd5d996e012419e1909620801785) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c5e8ea3a04ca7c7ab955cc8399ced5b5') in 0.009583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-88.wav
+  artifactKey: Guid(f7002b3bd1b1e9e44bd9fbd28474cce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-88.wav using Guid(f7002b3bd1b1e9e44bd9fbd28474cce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b4a6f58bd0fa7f3d2f4120271f37271d') in 0.011470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-92.wav
+  artifactKey: Guid(6f774e4987830904fb6b4c2578c8e921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-92.wav using Guid(6f774e4987830904fb6b4c2578c8e921) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e448ef1ef816947f59cdf3821479db40') in 0.011593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-85.wav
+  artifactKey: Guid(3a736a9bcbdda504baaa466896f5da67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-85.wav using Guid(3a736a9bcbdda504baaa466896f5da67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e1528a50cedbf5ce4744e58ca2063675') in 0.009721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-113.wav
+  artifactKey: Guid(76b2acde86d80944984cd62671e11d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-113.wav using Guid(76b2acde86d80944984cd62671e11d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'aa82ed1631baae3275e6b36f6258283b') in 0.014668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-106.wav
+  artifactKey: Guid(76bc9a2ff44ebfe48bcf53179446c343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-106.wav using Guid(76bc9a2ff44ebfe48bcf53179446c343) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a02a2d09bac6455606674ba7b0575608') in 0.027377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-118.wav
+  artifactKey: Guid(febe244ea5088d24185d98e3d1a152bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-118.wav using Guid(febe244ea5088d24185d98e3d1a152bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cb950c6cadbd2b707bc5140460fdd24b') in 0.013274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-96.wav
+  artifactKey: Guid(c33be89c4f1612b468904e44a66e9c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-96.wav using Guid(c33be89c4f1612b468904e44a66e9c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2c44b5e55b04703395ff3fee2b7787eb') in 0.008988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-115.wav
+  artifactKey: Guid(7eae75d1fc189664c916c5814302c5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-115.wav using Guid(7eae75d1fc189664c916c5814302c5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '65d7d2829e054f3393c2128e42fde822') in 0.019676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-101.wav
+  artifactKey: Guid(1ccc73e3d94bfcc44b6ebbb9ce4a7b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-101.wav using Guid(1ccc73e3d94bfcc44b6ebbb9ce4a7b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ce525448558a542f6845f049d4bc2fcf') in 0.028882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-94.wav
+  artifactKey: Guid(d639b6f5a66e22842b6d42f161ba8fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-94.wav using Guid(d639b6f5a66e22842b6d42f161ba8fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'da3e3ad7b8ceba9654386e10b203ec1b') in 0.017934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-82.wav
+  artifactKey: Guid(c737d3a5fd340574796802ab5d2a68ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-82.wav using Guid(c737d3a5fd340574796802ab5d2a68ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c1cc60345affdb98a2ec532c1fec2bcb') in 0.025486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007852 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-84.wav
+  artifactKey: Guid(f4ed5aae7fca11a4c94630c0f9b9a261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-84.wav using Guid(f4ed5aae7fca11a4c94630c0f9b9a261) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c73a2b5a2a5609b4b429a8dff95b247c') in 0.006124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-99.wav
+  artifactKey: Guid(12f62027f5bb8f941920feae3d7748c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Laser_Gunshots_SFX_Pack1/Wave/44_1kHz-24bit/With_Added_Thump/Laser_Gun_Thump_P1-99.wav using Guid(12f62027f5bb8f941920feae3d7748c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'eecce5e3d7363c080fb1a1b4f70c0d3b') in 0.007202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 由于线程退出或应用程序请求，已中止 I/O 操作。
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

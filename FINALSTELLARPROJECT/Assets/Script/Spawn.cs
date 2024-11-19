@@ -6,8 +6,8 @@ public class Spawn : MonoBehaviour
 {
     public GameObject enemy1,enemy2,enemy3;
     public int randomSpawn = 0,willSpawn = 0;
-    public static float currentTime = 10f;
-    private float invokeTime=10f;
+    public static float currentTime = 5f;
+    private float invokeTime=5f;
     // Start is called before the first frame update
     void Start()
     {

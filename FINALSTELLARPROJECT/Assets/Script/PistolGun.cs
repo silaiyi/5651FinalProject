@@ -11,11 +11,13 @@ public class PistolGun : MonoBehaviour
     public float range = 100;
     public float force = 1,PistolDamege = 20;
     public GameObject hitFX,bomb,laserBullet,rocket,bullet;
+    private AudioSource Gunaudio;
+    public AudioClip PistolAudio,BolterAudio,RocketAudio,LaserAudio;
     //public AudioClip hitSound;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Gunaudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -60,31 +62,18 @@ public class PistolGun : MonoBehaviour
     void PistolShot(){
         //Instantiate(pistolbullet, transform.position, transform.rotation);
         if(invokeTime - currentTime >= 0)
-        {   /*
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(ray.origin, ray.direction * range, Color.green);
-            RaycastHit hit;
-            Debug.Log("Go Go!");
-            //audio.PlayOneShot(hitSound);
-            if (Physics.Raycast(ray, out hit, TotalPistolRange))
-            {
-                Instantiate(hitFX, hit.point, Quaternion.identity);
-                if (hit.rigidbody)
-                {
-                    hit.rigidbody.AddForceAtPosition(TotalPistolForce * ray.direction,hit.point, ForceMode.Impulse);
-                    hit.transform.SendMessage("PistolDamege", TotalPistolDamege);
-                    Debug.Log("On Hit");
-                }
-            }*/
+        {   
             Instantiate(bullet, transform.position, transform.rotation);
+            Gunaudio.PlayOneShot(PistolAudio);
             invokeTime=0;
         }
     }
     void BolterShot(){
-        if(BloterCD - 5f >= 0)
+        if(BloterCD - 2f >= 0)
         {
             Instantiate(bomb, transform.position, transform.rotation);
             BloterCD=0;
+            Gunaudio.PlayOneShot(BolterAudio);
         }
     }
     void EgunShot(){
@@ -97,33 +86,23 @@ public class PistolGun : MonoBehaviour
                 cdtime=0;
                 laserTime=0;  
             }
+            Gunaudio.PlayOneShot(LaserAudio);
             //cdtime=0;            
         }
     }
     void HeavyShot(){
         if(invokeTime - 0.01f >= 0)
-        {/*
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(ray.origin, ray.direction * range, Color.green);
-            RaycastHit hit;
-            //audio.PlayOneShot(hitSound);
-            if (Physics.Raycast(ray, out hit, TotalPistolRange+100))
-            {
-                Instantiate(hitFX, hit.point, Quaternion.identity);
-                if (hit.rigidbody)
-                {
-                    hit.rigidbody.AddForceAtPosition(TotalPistolForce * ray.direction,hit.point, ForceMode.Impulse);
-                    hit.transform.SendMessage("PistolDamege", TotalPistolDamege);
-                }
-            }*/
+        {
             Instantiate(bullet, transform.position, transform.rotation);
+            Gunaudio.PlayOneShot(PistolAudio);
             invokeTime=0;
         }
     }
     void RocketShot(){
-        if(RocketCD - 10f >= 0)
+        if(RocketCD - 5f >= 0)
         {
             Instantiate(rocket, transform.position, transform.rotation);
+            Gunaudio.PlayOneShot(RocketAudio);
             RocketCD=0;
         }
     }

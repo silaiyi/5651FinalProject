@@ -6,9 +6,12 @@ public class LaserSword : MonoBehaviour
 {
     // Start is called before the first frame update
     public float TotalLaserDamge,LaserDamage=20;
+    private AudioSource Swordaudio;
+    public AudioClip SlashAudio;
     void Start()
     {
         //TotalLaserDamge=LaserDamage;
+        Swordaudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,6 +27,7 @@ public class LaserSword : MonoBehaviour
         {
             hp2.EnergyDamege(TotalLaserDamge);
             hit.transform.SendMessage("PistolDamege", TotalLaserDamge);
+            Swordaudio.PlayOneShot(SlashAudio);
             //Debug.Log("On Hit");
         }
     }

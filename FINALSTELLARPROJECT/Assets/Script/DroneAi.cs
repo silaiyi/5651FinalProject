@@ -15,6 +15,8 @@ public class DroneAi : MonoBehaviour
     public static bool LaserDroneOn=false,BulletDroneOn=false,ExplodeDroneOn=false;
     public GameObject[] targets;
     public string enemyTag = "Enemy";
+    AudioSource Droneaudio;
+    public AudioClip PistolAudio,RocketAudio,LaserAudio;
 
     //public static Transform Player;
     // Start is called before the first frame update
@@ -23,6 +25,7 @@ public class DroneAi : MonoBehaviour
         //Enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
 
         //LaserDroneOn=false;BulletDroneOn=false;ExplodeDroneOn=false;
+        Droneaudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -59,6 +62,7 @@ public class DroneAi : MonoBehaviour
             Instantiate(Laser, Gun.position, Gun.rotation);
             //Debug.Log("Laser Fire");
             LaserCd=0;
+            Droneaudio.PlayOneShot(LaserAudio);
         }
     }
     void BulletShoot(){
@@ -66,6 +70,7 @@ public class DroneAi : MonoBehaviour
         if(BulletCd-0.5f>=0){
             Instantiate(Bullet, Gun.position, Gun.rotation);
             BulletCd=0;
+            Droneaudio.PlayOneShot(PistolAudio);
         }
     }
     void ExplodeShoot(){
@@ -73,6 +78,7 @@ public class DroneAi : MonoBehaviour
         if(BombCd-5f>=0){
             Instantiate(Bomb, Gun.position, Gun.rotation);
             BombCd=0;
+            Droneaudio.PlayOneShot(RocketAudio);
         }
     }
     private void LookAtEnemy(){

@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
         if(InGameUpdate.LegJumpOn==true){
             //walkspeed=25;
             if(Input.GetKeyDown(KeyCode.Space)&&jumpCD-3f>=0){
-                transform.Translate(0, 10, 0);
+                transform.Translate(0, 25, 0);
                 jumpCD=0f;
                 Instantiate(jumpExplode, transform.position, transform.rotation);
             }
@@ -235,7 +235,7 @@ public class Player : MonoBehaviour
         if(Input.GetMouseButtonDown(0)){
             //anim.Play("BolterAtk");
             //anim.SetTrigger("BolterAttack");
-            if(BloterCD - 5f >= 0)
+            if(BloterCD - 2f >= 0)
             {
                 //anim.Play("BolterAtk");
                 anim.SetTrigger("BolterAttack");
@@ -372,7 +372,7 @@ public class Player : MonoBehaviour
     void RocketMoveMent(){
         if(Input.GetMouseButtonDown(0)){
             //anim.Play("RocketAtk");
-            if(RocketCD - 10f >= 0)
+            if(RocketCD - 5f >= 0)
             {
                 anim.Play("RocketAtk");
                 RocketCD=0;

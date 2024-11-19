@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject Main,Planet,Upgrade,Shop,Options,showPlayer,UpgradeMenu,ManualofArms;
-    public GameObject ShowLv2,ShowLv3;
+    public GameObject ShowLv2,ShowLv3,OpenTut;
     public static int openLv2=0,openLv3=0;
 
     void Start()
@@ -44,8 +44,14 @@ public class MainMenu : MonoBehaviour
         Planet.SetActive(false);
         Upgrade.SetActive(false);
         Options.SetActive(false);
+        OpenTut.SetActive(false);
         showPlayer.SetActive(true);
         SaveData();
+    }
+    public void OpenTutorial(){
+        Main.SetActive(false);
+        showPlayer.SetActive(false);
+        OpenTut.SetActive(true);
     }
     public void OpenPlanet()
     {

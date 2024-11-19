@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8729953688689748238}
   - component: {fileID: 2315998786121260577}
   - component: {fileID: 5993526771671184746}
+  - component: {fileID: 5794765713486839447}
   m_Layer: 0
   m_Name: EyeMonster
   m_TagString: Enemy
@@ -73,7 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 9071034593412298534}
   atkRange: 50
-  moveingSpeed: 20
+  moveingSpeed: 500
 --- !u!114 &6283089877749575347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,14 +89,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Totallife: 0
   life: 10000
-  PistolDef: 100
+  PistolDef: 500
   EnergyDef: 5000
   BolterDef: 100
   TotalPistolGetHit: 0
   TotalEnergyGetHit: 0
   TotalBolterGetHit: 0
   GiveExp: 10
-  GiveCoin: 10
+  GiveCoin: 100
 --- !u!65 &8729953688689748238
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -115,8 +116,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9, y: 4.7791457, z: 2}
-  m_Center: {x: 0, y: 6.9228334, z: 0}
+  m_Size: {x: 9, y: 10, z: 2.830142}
+  m_Center: {x: 0, y: 6.9228334, z: -0.41507158}
 --- !u!54 &2315998786121260577
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -154,7 +155,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 5
-  m_Speed: 3.5
+  m_Speed: 100
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 360
@@ -166,6 +167,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5794765713486839447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666374913974011377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316f11fb1604d2f45807c2b5bc2e075d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atk: 100
+  TotalAtk: 0
 --- !u!1001 &6508416903458375144
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -56,6 +56,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 10
   GiveCoin: 5
 --- !u!54 &827563998813059610
@@ -142,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 2954167040793974762}
   atkRange: 15
-  moveingSpeed: 7
+  moveingSpeed: 15
 --- !u!65 &5293989482959165408
 BoxCollider:
   m_ObjectHideFlags: 0

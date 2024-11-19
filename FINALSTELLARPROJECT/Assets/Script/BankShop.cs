@@ -54,6 +54,19 @@ public class BankShop : MonoBehaviour
             ShopBtn.SetActive(true);
             //ShopMenu.SetActive(true);
         }
+        menuText();
+    }
+    public void menuText(){
+        ExHp.text = ShopExHpC + " G  LV: "+ShopExHpLv;
+        Def.text = ShopDefC + " G  LV: "+ShopDefLv;
+        LaserDamege.text = ShopLaserDamegeC + " G  LV: "+ShopLaserDamegeLv;
+        PistolRange.text = ShopPistolRangeC + " G  LV: "+ShopPistolRangeLv;
+        PistolDamege.text = ShopPistolDamegeC + " G  LV: "+ShopPistolDamegeLv;
+        //PistolForce.text = ShopPistolForceC + " G  LV: "+ShopPistolForceLv;
+        BolterSpeed.text = ShopBolterSpeedC + " G  LV: "+ShopBolterSpeedLv;
+        BolterGrow.text = ShopBolterGrowC + " G  LV: "+ShopBolterGrowLv;
+        BolterAtk.text = ShopBolterAtkC + " G  LV: "+ShopBolterAtkLv;
+        BolterPush.text = ShopBolterPushC + " G  LV: "+ShopBolterPushLv;
     }
     public void UpdateHp(){
         if(Coin-ShopExHpC>=0){

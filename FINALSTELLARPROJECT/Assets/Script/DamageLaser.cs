@@ -15,7 +15,7 @@ public class DamageLaser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TotalLaserDamge=LaserDamage + BankShop.ShopLaserDamege + InGameUpdate.InGameLaserDamege;
+        TotalLaserDamge=(LaserDamage + BankShop.ShopLaserDamege + InGameUpdate.InGameLaserDamege)/2;
         //laserCD+=Time.deltaTime;
     }
     private void OnTriggerStay(Collider collision)
@@ -25,7 +25,7 @@ public class DamageLaser : MonoBehaviour
         if (hp2 != null)
         {
             laserCD+=Time.deltaTime;
-            if(laserCD-1f>=0){
+            if(laserCD-2f>=0){
                 hp2.EnergyDamege(TotalLaserDamge);
                 laserCD=0;
             }

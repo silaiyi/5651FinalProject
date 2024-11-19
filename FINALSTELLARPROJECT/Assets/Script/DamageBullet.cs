@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageBullet : MonoBehaviour
 {
-    public float TotalPistolDamge,PistolDamge=20;
+    public float TotalPistolDamge,PistolDamge=200;
     void Start()
     {
         

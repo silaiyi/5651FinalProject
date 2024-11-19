@@ -9,11 +9,16 @@ public class Bomb : MonoBehaviour
     public float xs=0;
     public float ys=0;
     public static float zs=0;
+    
+    AudioSource Bombaudio;
+    public AudioClip BoomAudio;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         zs = speed + BankShop.ShopBolterSpeed + InGameUpdate.InGameBolterSpeed;
+        Bombaudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,10 +29,11 @@ public class Bomb : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         GameObject hit = collision.gameObject;
-        Player player = hit.GetComponent<Player>();
-        if(player == null){
+        EnemyAi laser = hit.GetComponent<EnemyAi>();
+        if(laser!=null){
             Destroy(gameObject);
             Instantiate(explo,this.transform.position,this.transform.rotation);
+            Bombaudio.PlayOneShot(BoomAudio);
         }
             
     }

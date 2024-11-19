@@ -6,6 +6,12 @@ public class Explo : MonoBehaviour
 {
     public float grow=20,atk=20,push=5,TotalGrow,TotalAtk,TotalPush;
     public Rigidbody rb;
+    /*
+    private AudioSource audio;
+    public AudioClip BoomAudio;
+    audio = GetComponent<AudioSource>();
+    audio.PlayOneShot(RocketAudio);
+    */
     //public GameObject exploVFX;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +20,7 @@ public class Explo : MonoBehaviour
         TotalGrow = grow  + BankShop.ShopBolterGrow + InGameUpdate.InGameBolterGrow;
         TotalPush = push  + BankShop.ShopBolterPush + InGameUpdate.InGameBolterPush;
         Destroy(gameObject, 1f);
+        
     }
 
     // Update is called once per frame

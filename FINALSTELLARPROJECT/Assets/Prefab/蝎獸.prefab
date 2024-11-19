@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 4189970847449749343}
   atkRange: 19
-  moveingSpeed: 3.5
+  moveingSpeed: 20
 --- !u!114 &2617890519453404002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   TotalEnergyGetHit: 0
   TotalBolterGetHit: 0
   GiveExp: 10
-  GiveCoin: 10
+  GiveCoin: 50
 --- !u!65 &1645653515369234220
 BoxCollider:
   m_ObjectHideFlags: 0

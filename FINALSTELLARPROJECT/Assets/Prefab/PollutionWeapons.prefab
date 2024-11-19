@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 9181849084545686256}
   atkRange: 10
-  moveingSpeed: 3.5
+  moveingSpeed: 10
 --- !u!114 &5884932927116471523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +141,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 5
   GiveCoin: 1
 --- !u!95 &9181849084545686256
@@ -376,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316f11fb1604d2f45807c2b5bc2e075d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atk: 50
+  atk: 20
   TotalAtk: 0
 --- !u!4 &8159847003781639909 stripped
 Transform:

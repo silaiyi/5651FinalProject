@@ -137,7 +137,10 @@
   <ItemGroup>
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\SineVFX\TranslucentCrystals\Resources\Shaders\SkyboxProceduralDesaturated.shader" />
+    <None Include="Assets\SineVFX\TranslucentCrystals\Readme.txt" />
     <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\SineVFX\TranslucentCrystals\_SRP\!!!_ReadBeforeImport_!!!.txt" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
     <None Include="Assets\Isle of Assets\Mobile Force Field\Shaders\Force Field.shader" />
     <None Include="Assets\Unity UI Samples\Textures and Sprites\SF UI\Background\LICENSE.txt" />
@@ -151,6 +154,7 @@
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
     <None Include="Assets\DeepSpaceSkyboxPack\DiverseSpace\Diverse Space Skybox Readme.txt" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
+    <None Include="Assets\SineVFX\TranslucentCrystals\Resources\Shaders\Crystal.shader" />
     <None Include="Assets\Unity UI Samples\Fonts\Jupiter\LICENSE.txt" />
     <None Include="Assets\DeepSpaceSkyboxPack\GalacticGreen\Galactic Green Skybox Readme.txt" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
