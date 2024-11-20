@@ -655,6 +655,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 10
   GiveCoin: 10
 --- !u!1001 &195374857
@@ -1068,6 +1071,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 10
   GiveCoin: 10
 --- !u!54 &356255325
@@ -2864,6 +2870,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 50
   GiveCoin: 50
 --- !u!1 &1080800219
@@ -3965,7 +3974,7 @@ GameObject:
   - component: {fileID: 1557787773}
   m_Layer: 0
   m_Name: Lv1Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

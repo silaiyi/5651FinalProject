@@ -95,6 +95,7 @@
     <Compile Include="Assets\Script\LaserSword.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\Script\DamagePart.cs" />
+    <Compile Include="Assets\Script\ResolutionManager.cs" />
     <Compile Include="Assets\Script\EnemyCanon.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\DragMe.cs" />

@@ -25,7 +25,7 @@ public class DamageLaser : MonoBehaviour
         if (hp2 != null)
         {
             laserCD+=Time.deltaTime;
-            if(laserCD-2f>=0){
+            if(laserCD-1.5f>=0){
                 hp2.EnergyDamege(TotalLaserDamge);
                 laserCD=0;
             }

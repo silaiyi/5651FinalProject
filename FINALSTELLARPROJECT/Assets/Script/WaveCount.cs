@@ -27,8 +27,8 @@ public class WaveCount : MonoBehaviour
         invokeTime +=Time.deltaTime;
         if(invokeTime-currentTime>=0){
             TotalExHp += MonExHp + SystemMenu.EnemyHp;
-            exAtk += 50 + SystemMenu.EnemyAtk;
-            exCoin += 50+  SystemMenu.moreCoin;exExp += 50 + SystemMenu.moreExp;SpwanChange+=5+SystemMenu.SpwanChange;
+            exAtk += 10 + SystemMenu.EnemyAtk;
+            exCoin += 1 + SystemMenu.moreCoin;exExp += 1 + SystemMenu.moreExp;SpwanChange += 5 + SystemMenu.SpwanChange;
             spawnWave+=1;
             invokeTime=0;
         }

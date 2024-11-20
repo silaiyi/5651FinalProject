@@ -91,7 +91,7 @@ public class PistolGun : MonoBehaviour
         }
     }
     void HeavyShot(){
-        if(invokeTime - 0.01f >= 0)
+        if(invokeTime - 0.05f >= 0)
         {
             Instantiate(bullet, transform.position, transform.rotation);
             Gunaudio.PlayOneShot(PistolAudio);

@@ -179,7 +179,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 7463840898183425379}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 12
+  m_Radius: 1
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -224,6 +224,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 15
   GiveCoin: 10
 --- !u!95 &4396965158635355965

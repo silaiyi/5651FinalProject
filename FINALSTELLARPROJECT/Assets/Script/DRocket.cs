@@ -9,6 +9,7 @@ public class DRocket : MonoBehaviour
     public float xs=0;
     public float ys=0;
     public static float zs=0;
+    public string targetTag = "Ground";
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,11 @@ public class DRocket : MonoBehaviour
             Destroy(gameObject);
             Instantiate(explo,this.transform.position,this.transform.rotation);
         }
-        //this rocket = hit.GetComponent<This>();    
+        //this rocket = hit.GetComponent<This>();
+        if (collision.gameObject.tag == targetTag)
+        {
+            Destroy(gameObject);
+            Instantiate(explo,this.transform.position,this.transform.rotation);
+        }    
     }
 }

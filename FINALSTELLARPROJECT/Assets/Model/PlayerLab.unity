@@ -269,6 +269,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 100
   GiveCoin: 10
 --- !u!65 &501868270
@@ -821,6 +824,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 100
   GiveCoin: 10
 --- !u!65 &1536018975
@@ -1080,6 +1086,9 @@ MonoBehaviour:
   MPR: {fileID: 0}
   MPD: {fileID: 0}
   MPF: {fileID: 0}
+  LaserDrone: {fileID: 0}
+  BulletDrone: {fileID: 0}
+  ExplodeDrone: {fileID: 0}
   coin: {fileID: 0}
   HpSl: {fileID: 0}
   ExpSl: {fileID: 0}
@@ -1087,6 +1096,9 @@ MonoBehaviour:
   Timer: 0
   LoseMenu: {fileID: 0}
   WinMenu: {fileID: 0}
+  LegSpeed: {fileID: 0}
+  LegJump: {fileID: 0}
+  LegEnergy: {fileID: 0}
 --- !u!1 &1954178225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,6 +1135,9 @@ MonoBehaviour:
   PistolDef: 0
   EnergyDef: 0
   BolterDef: 0
+  TotalPistolGetHit: 0
+  TotalEnergyGetHit: 0
+  TotalBolterGetHit: 0
   GiveExp: 100
   GiveCoin: 10
 --- !u!65 &1954178227
@@ -1286,63 +1301,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66da486309a0acb45944e5293fc1a27a, type: 3}
---- !u!1001 &4805887854084252758
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3666374913974011377, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_Name
-      value: EyeMonster
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170946064986237174, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 97da43997ca6da94aac3db69f2a92231, type: 3}
 --- !u!224 &5191738619327302365 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2300588986483376715, guid: 0a0f41a5976fda54eb1a5864cc9ebdaa, type: 3}
@@ -1520,4 +1478,3 @@ SceneRoots:
   - {fileID: 1536018977}
   - {fileID: 501868272}
   - {fileID: 687227559}
-  - {fileID: 4805887854084252758}

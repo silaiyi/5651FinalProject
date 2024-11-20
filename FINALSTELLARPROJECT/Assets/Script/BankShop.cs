@@ -70,7 +70,7 @@ public class BankShop : MonoBehaviour
     }
     public void UpdateHp(){
         if(Coin-ShopExHpC>=0){
-            ShopExHp += 100;
+            ShopExHp += 5;
             Coin-=ShopExHpC;
             ShopExHpC+=ShopExHpEx;
             ShopExHpLv++;
@@ -82,7 +82,7 @@ public class BankShop : MonoBehaviour
     }
     public void UpdateDef(){
         if(Coin-ShopDefC>=0){
-            ShopDef += 100;
+            ShopDef += 1;
             Coin-=ShopDefC;
             ShopDefC+=ShopDefEx;
             ShopDefLv++;
@@ -107,7 +107,7 @@ public class BankShop : MonoBehaviour
     }
     public void UpdateShopPistolRange(){
         if(Coin-ShopPistolRangeC>=0){
-            ShopPistolRange += 10;
+            ShopPistolRange += 5;
             Coin-=ShopPistolRangeC;
             ShopPistolRangeC+=ShopPistolRangeEX;
             ShopPistolRangeLv++;
@@ -119,7 +119,7 @@ public class BankShop : MonoBehaviour
     }
     public void UpdatePistolDamege(){
         if(Coin-ShopPistolDamegeC>=0){
-            ShopPistolDamege += 10;
+            ShopPistolDamege += 1;
             Coin-=ShopPistolDamegeC;
             ShopPistolDamegeC+=ShopPistolDamegeEX;
             ShopPistolDamegeLv++;
@@ -178,24 +178,24 @@ public class BankShop : MonoBehaviour
         }
     }
     public void UnlockLaserBtn(){
-        if(Coin - 25000 >= 0){
-            Coin -= 25000;
+        if(Coin - 2500 >= 0){
+            Coin -= 2500;
             UnlockLaser = 1;
             PlayerPrefs.SetInt("UnlockLaser",UnlockLaser);
             LaserBtn.SetActive(false);
         }
     }
     public void UnlockHeavyBtn(){
-        if(Coin - 25000 >= 0){
-            Coin -= 25000;
+        if(Coin - 2500 >= 0){
+            Coin -= 2500;
             UnlockHeavy = 1;
             PlayerPrefs.SetInt("UnlockHeavy",UnlockHeavy);
             HeavyBtn.SetActive(false);
         }
     }
     public void UnlockRocketBtn(){
-        if(Coin - 25000 >= 0){
-            Coin -= 25000;
+        if(Coin - 2500 >= 0){
+            Coin -= 2500;
             UnlockRocket = 1;
             PlayerPrefs.SetInt("UnlockRocket",UnlockRocket);
             RocketBtn.SetActive(false);

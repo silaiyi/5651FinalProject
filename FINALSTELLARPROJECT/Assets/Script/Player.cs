@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float seeHp;
     public Animator anim;
     public int speed = 10;
-    public static int walkspeed = 5;
+    public static int walkspeed = 10;
     public static bool atktype1 = true, atktype2 = false, atktype3 = false, atktype4 = false, atktype5 = false, atktype6 = false;
     public bool cango = false;
     public int attackNum = 2;//
@@ -43,19 +43,19 @@ public class Player : MonoBehaviour
         RocketCD += Time.deltaTime;
         DroneOn();
         LegOn();
-        //OnGround();
+        OnGround();
         
     }
     void LegOn(){
         if(InGameUpdate.LegJumpOn==true){
             //walkspeed=25;
             if(Input.GetKeyDown(KeyCode.Space)&&jumpCD-3f>=0){
-                transform.Translate(0, 25, 0);
+                transform.Translate(0, 50, 0);
                 jumpCD=0f;
                 Instantiate(jumpExplode, transform.position, transform.rotation);
             }
         }else if(InGameUpdate.LegSpeedOn==true){
-            walkspeed=10;
+            walkspeed=25;
             walkDamage.SetActive(true);
             energyS.SetActive(false);
         }else if(InGameUpdate.LegEnergyOn==true){
@@ -135,42 +135,42 @@ public class Player : MonoBehaviour
         else if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(0, 0, walkspeed * Time.deltaTime);
-            anim.Play("ESwordWalk");
+            //anim.Play("ESwordWalk");
             if (Input.GetKey(KeyCode.A))
             {
                 transform.Translate(-walkspeed * Time.deltaTime, 0, 0);
-                anim.Play("ESwordWalk");
+                //anim.Play("ESwordWalk");
             }
             else
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(walkspeed * Time.deltaTime, 0, 0);
-                anim.Play("ESwordWalk");
+                //anim.Play("ESwordWalk");
             }else if(Input.GetMouseButton(0)){
             anim.Play(attackAnimList[0]);
         }
         }else if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(walkspeed * Time.deltaTime, 0, 0);
-            anim.Play("ESwordWalk");
+           // anim.Play("ESwordWalk");
         }else if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(-walkspeed * Time.deltaTime, 0, 0);
-            anim.Play("ESwordWalk");
+            //anim.Play("ESwordWalk");
         }else if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, 0, -walkspeed * Time.deltaTime);
-            anim.Play("ESwordWalk");
+            //anim.Play("ESwordWalk");
             if (Input.GetKey(KeyCode.A))
             {
                 transform.Translate(-walkspeed * Time.deltaTime, 0, 0);
-                anim.Play("ESwordWalk");
+                //anim.Play("ESwordWalk");
             }
             else
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(walkspeed * Time.deltaTime, 0, 0);
-                anim.Play("ESwordWalk");
+                //anim.Play("ESwordWalk");
             }
         }
     }
